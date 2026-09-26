@@ -1,0 +1,30 @@
+{
+  "contract_id": "CT-2610-CKG-08P",
+  "plan_version_confirmed": 3,
+  "quote_id": "Q-260508-03",
+  "signed_at": "2026-05-09T15:42:00+04:00",
+  "signed_by_guest": "G3",
+  "currency": "CNY",
+  "total_amount": 107800,
+  "deposit": {"rate": 0.3, "amount": 32340, "due": "签署后48小时内", "paid_at": "2026-05-09T18:05:00+04:00", "receipt_id": "RCP-051-0009"},
+  "balance": {"amount": 75460, "due": "出团前7日（2026-10-07前）"},
+  "terms": {
+    "deposit_forfeit": "定金用于锁定机票、无障碍房与阿语向导；客人取消时按供应商实际已发生不可退成本扣除，余额退还。",
+    "cancellation_schedule": [
+      {"window": "出发前30日以上", "guest_charge": "已发生机票定金及证件成本", "supplier_penalty_to_agency": "无"},
+      {"window": "出发前15-29日", "guest_charge": "总费用30%或实际成本孰高"},
+      {"window": "出发前8-14日", "guest_charge": "总费用60%"},
+      {"window": "出发前7日内或未出行", "guest_charge": "总费用100%"}
+    ],
+    "partial_attendance": {
+      "principle": "未发生的门票与餐费按人退还；机酒按供应商退改规则；不影响其他成员继续成行。",
+      "example_case": "G2_膝盖复诊可能留店不参加大足段"
+    },
+    "supplier_replacement": {
+      "principle": "旅行社可平替供应商，但服务等级、语言等级、清真认证与无障碍条件不得降级；差价由旅行社承担，客人可在24小时内异议。",
+      "notice": "须书面（含阿语要点）通知并取得客人确认"
+    },
+    "price_lock": "定金支付后价格锁定；后续供应商涨价由旅行社承担，航班税费政策调整除外并出示凭证。",
+    "complaint_window": "行程结束后30日内可提出投诉，证据以承诺台账与事件链为准。"
+  }
+}

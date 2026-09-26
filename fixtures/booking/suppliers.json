@@ -1,0 +1,74 @@
+[
+  {
+    "supplier_id": "SUP-VISA",
+    "category": "证件与入境合规",
+    "name": "顺安入境服务（样例虚构）",
+    "capabilities": ["护照有效期核验", "免签资格核验", "未成年人随行同意核验", "证件异常阻断"],
+    "languages_for_service": ["zh", "en"],
+    "sla_hours": 4,
+    "replacement_allowed": false
+  },
+  {
+    "supplier_id": "SUP-AIR",
+    "category": "国际与境内机票",
+    "name": "云端航旅票务（样例虚构）",
+    "capabilities": ["国际客票", "婴儿摇篮", "轮椅旅客服务申请", "清真机餐"],
+    "sla_hours": 2,
+    "replacement_allowed": false
+  },
+  {
+    "supplier_id": "SUP-HTL",
+    "category": "酒店",
+    "name": "江畔酒店联盟（样例虚构）",
+    "capabilities": ["无障碍房", "清真友好楼层", "无酒精房", "婴儿床", "朝向标记卡"],
+    "sla_hours": 24,
+    "replacement_allowed": true,
+    "replacement_condition": "原酒店确认前可平替；确认后须同等或以上无障碍条件"
+  },
+  {
+    "supplier_id": "SUP-GUIDE",
+    "category": "阿拉伯语向导",
+    "name": "丝路语言服务（样例虚构）",
+    "capabilities": ["阿拉伯语全程陪同", "川剧阿语解说", "祈祷时间提示", "英语备选"],
+    "language_levels": {"ar": "C2_native", "zh": "C1"},
+    "sla_hours": 48,
+    "replacement_allowed": true,
+    "replacement_condition": "须由审校评级阿语不低于B2的替补并在出团前48小时确认"
+  },
+  {
+    "supplier_id": "SUP-MEAL",
+    "category": "清真餐饮",
+    "name": "清味团餐（样例虚构）",
+    "capabilities": ["清真认证厨房", "无麸质餐", "坚果隔离餐", "软食幼儿餐", "餐盒打包"],
+    "sla_hours": 24,
+    "replacement_allowed": true,
+    "replacement_condition": "替补餐厅须持有效清真认证且能提供过敏隔离"
+  },
+  {
+    "supplier_id": "SUP-VEH",
+    "category": "用车",
+    "name": "山城礼宾车队（样例虚构）",
+    "capabilities": ["9座低地板商务车", "轮椅固定位", "儿童安全座椅", "婴儿车位"],
+    "sla_hours": 24,
+    "replacement_allowed": true,
+    "replacement_condition": "同车型与同等无障碍配置"
+  },
+  {
+    "supplier_id": "SUP-ACT",
+    "category": "分龄活动",
+    "name": "童趣研学（样例虚构）",
+    "capabilities": ["幼儿看护级手工", "少儿自然研学", "青少年川剧体验", "长者慢游导览"],
+    "sla_hours": 48,
+    "replacement_allowed": true,
+    "replacement_condition": "分龄组与无障碍支持不降级"
+  },
+  {
+    "supplier_id": "SUP-ASST",
+    "category": "境外救援",
+    "name": "环球援助（样例虚构）",
+    "capabilities": ["24小时阿语热线", "医院协调", "保险垫付"],
+    "hotline": "+86-23-XXXX-9521（样例）",
+    "sla_hours": 1,
+    "replacement_allowed": false
+  }
+]

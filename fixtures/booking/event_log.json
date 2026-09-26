@@ -1,0 +1,14 @@
+{
+  "integrity_rule": "事件只追加（append-only），含本地时区时间戳、操作人、关联承诺/投诉；投诉证据必须由事件链中的条目支撑，不接受无事件的赔付主张。",
+  "events": [
+    {"event_id": "EVT-1014-01", "at": "2026-10-14T10:00:00+08:00", "by": "SUP-VEH 司机 L.", "type": "service_log", "summary": "无障碍车准时抵达机场到达层，轮椅固定位与2个安全座椅到位", "commitment_id": "CMT-005"},
+    {"event_id": "EVT-1014-02", "at": "2026-10-14T11:05:00+08:00", "by": "SUP-HTL 前台", "type": "service_log", "summary": "4间房一次开房，无障碍房扶手与滚入式淋浴核验合格，婴儿床已就位，房间无酒精饮品", "commitment_id": "CMT-002"},
+    {"event_id": "EVT-1015-03", "at": "2026-10-15T17:12:00+08:00", "by": "阿语向导 M.H.", "type": "incident", "severity": "mid", "summary": "川剧场阿语同传发射器故障，17:12-17:32 改用向导耳语接力，青少年组体验受影响", "commitment_id": "CMT-003", "attachments": ["photo:device_tag_SN8821", "witness:EMP-077"]},
+    {"event_id": "EVT-1015-04", "at": "2026-10-15T17:40:00+08:00", "by": "G3（户主）", "type": "complaint", "summary": "现场投诉解说中断20分钟", "linked_event": "EVT-1015-03", "channel": "向导当面记录，客人在阿语/双语记录单上签字确认"},
+    {"event_id": "CMM-GD-07", "at": "2026-10-15T17:55:00+08:00", "by": "EMP-077", "type": "complaint_resolution", "summary": "与 SUP-GUIDE 商定：次日茶文化专场阿语讲解+退还该场解说费20%（400元），客人接受", "linked_event": "EVT-1015-04", "commitment_id": "CMT-003"},
+    {"event_id": "EVT-1016-02", "at": "2026-10-16T11:50:00+08:00", "by": "阿语向导 M.H.", "type": "service_log", "summary": "主麻车辆11:50送达重庆清真寺，男眷5人入寺；女眷与幼儿在寺旁茶室静室礼拜，13:45准时接往午膳", "commitment_id": "CMT-006"},
+    {"event_id": "EVT-1016-05", "at": "2026-10-16T19:30:00+08:00", "by": "EMP-077", "type": "supplier_notice", "summary": "SUP-MEAL 通知10月17日灶台检修无法供餐，立即启动备用餐厅核验", "commitment_id": "CMT-004"},
+    {"event_id": "EVT-1016-06", "at": "2026-10-16T20:15:00+08:00", "by": "EMP-077", "type": "replacement_confirmed", "summary": "SUP-MEAL-B 清真认证有效至2027-03-31，可做坚果隔离与软食；阿语替换通知经 REV-AR-03 审校，20:48客人签字确认", "commitment_id": "CMT-004", "attachments": ["AR-MEALMSG-01", "STL-03"]},
+    {"event_id": "EVT-1018-09", "at": "2026-10-18T16:10:00+08:00", "by": "SUP-AIR 值机", "type": "service_log", "summary": "回程航班准点起飞，8人同舱，G8摇篮位就位", "commitment_id": "CMT-001"}
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "quote_samples": [
+    {
+      "quote_id": "Q-260429-01",
+      "issued_at": "2026-04-29T11:24:00+04:00",
+      "venue": "ATM 2026 展台口头报价（书面留档）",
+      "currency": "AED",
+      "fx_reference": "1 AED ≈ 1.97 CNY（样例牌价，锁定前以结算单为准）",
+      "party_size": 8,
+      "private_group": true,
+      "status": "expired",
+      "expires_at": "2026-04-29T13:24:00+04:00",
+      "expiry_reason": "口头报价2小时内有效；回程航班未在有效期前确认，报价自动失效",
+      "price_components": [
+        {"component": "国际机票（8人，含婴儿摇篮申请）", "amount": 28800, "currency": "AED", "supplier_id": "SUP-AIR"},
+        {"component": "酒店4间×4晚（含无障碍房2间、无酒精房）", "amount": 13200, "currency": "AED", "supplier_id": "SUP-HTL"},
+        {"component": "阿拉伯语全程向导", "amount": 2600, "currency": "AED", "supplier_id": "SUP-GUIDE"},
+        {"component": "清真餐饮（特殊餐隔离）", "amount": 3360, "currency": "AED", "supplier_id": "SUP-MEAL"},
+        {"component": "无障碍商务车与儿童座椅", "amount": 1520, "currency": "AED", "supplier_id": "SUP-VEH"},
+        {"component": "分龄活动与门票", "amount": 2480, "currency": "AED", "supplier_id": "SUP-ACT"},
+        {"component": "证件核验与境外救援", "amount": 640, "currency": "AED", "supplier_id": "SUP-VISA"}
+      ]
+    },
+    {
+      "quote_id": "Q-260502-02",
+      "issued_at": "2026-05-02T10:00:00+04:00",
+      "venue": "邮件正式报价（方案 v2）",
+      "currency": "CNY",
+      "fx_reference": "以人民币结算",
+      "party_size": 8,
+      "private_group": true,
+      "status": "expired",
+      "expires_at": "2026-05-05T18:00:00+04:00",
+      "expiry_reason": "酒店无障碍房库存未在截止前锁定",
+      "price_components": [
+        {"component": "国际机票", "amount": 57100, "currency": "CNY", "supplier_id": "SUP-AIR"},
+        {"component": "酒店4间×4晚", "amount": 26400, "currency": "CNY", "supplier_id": "SUP-HTL"},
+        {"component": "阿拉伯语向导", "amount": 5200, "currency": "CNY", "supplier_id": "SUP-GUIDE"},
+        {"component": "清真餐饮", "amount": 6720, "currency": "CNY", "supplier_id": "SUP-MEAL"},
+        {"component": "无障碍用车", "amount": 3040, "currency": "CNY", "supplier_id": "SUP-VEH"},
+        {"component": "分龄活动", "amount": 4960, "currency": "CNY", "supplier_id": "SUP-ACT"},
+        {"component": "证件核验与救援", "amount": 1280, "currency": "CNY", "supplier_id": "SUP-VISA"}
+      ]
+    },
+    {
+      "quote_id": "Q-260508-03",
+      "issued_at": "2026-05-08T09:30:00+04:00",
+      "venue": "合同附件报价（方案 v3，最终）",
+      "currency": "CNY",
+      "party_size": 8,
+      "private_group": true,
+      "status": "confirmed_locked",
+      "expires_at": "2026-05-10T18:00:00+04:00",
+      "locked_at": "2026-05-09T15:42:00+04:00",
+      "lock_note": "客人签署合同并支付定金，价格锁定；回程航班确认回传后出票",
+      "price_components": [
+        {"component": "国际机票（含16:10回程确认位）", "amount": 58640, "currency": "CNY", "supplier_id": "SUP-AIR"},
+        {"component": "酒店4间×4晚（无障碍2间）", "amount": 27960, "currency": "CNY", "supplier_id": "SUP-HTL"},
+        {"component": "阿拉伯语向导（审校认证B2+）", "amount": 5200, "currency": "CNY", "supplier_id": "SUP-GUIDE"},
+        {"component": "清真餐饮（含坚果隔离与软食）", "amount": 6720, "currency": "CNY", "supplier_id": "SUP-MEAL"},
+        {"component": "无障碍用车（轮椅固定位+2安全座椅）", "amount": 3040, "currency": "CNY", "supplier_id": "SUP-VEH"},
+        {"component": "分龄活动与门票", "amount": 4960, "currency": "CNY", "supplier_id": "SUP-ACT"},
+        {"component": "证件核验与救援", "amount": 1280, "currency": "CNY", "supplier_id": "SUP-VISA"}
+      ]
+    }
+  ]
+}

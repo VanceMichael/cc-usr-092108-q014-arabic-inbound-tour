@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "定制团履约资料包（分层加载后的整体形状）",
+  "description": "成员关系、证件核验、偏好、无障碍需要、授权范围分文件保存；本契约描述 src.records.load_booking 组装后的包。",
+  "type": "object",
+  "required": [
+    "family",
+    "documents",
+    "preferences",
+    "accessibility",
+    "consents",
+    "suppliers",
+    "route",
+    "quotes",
+    "plan",
+    "contract",
+    "settlement",
+    "callbacks",
+    "arabic",
+    "prayer",
+    "commitments",
+    "events",
+    "itinerary",
+    "capabilities"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "family": {
+      "type": "object",
+      "required": ["family_id", "lead_guest_id", "members"],
+      "properties": {
+        "members": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["guest_id", "relation", "birth_year", "age_band", "minor", "guardian_ids"],
+            "properties": {
+              "guest_id": {"type": "string", "pattern": "^G[0-9]+$"},
+              "minor": {"type": "boolean"}
+            }
+          }
+        }
+      }
+    },
+    "documents": {
+      "type": "object",
+      "required": ["policy_ref", "records"],
+      "properties": {
+        "records": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["guest_id", "history", "status"],
+            "properties": {
+              "status": {"enum": ["verified", "exception_resolved", "pending", "failed"]},
+              "history": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["check", "result", "at", "by"],
+                  "properties": {"result": {"enum": ["pass", "fail", "pending"]}}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "preferences": {"type": "object"},
+    "accessibility": {"type": "object"},
+    "consents": {
+      "type": "object",
+      "required": ["grants"],
+      "properties": {
+        "grants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["grant_id", "purpose", "recipient_supplier_id", "guest_scope", "fields", "granted", "granted_by"],
+            "properties": {"granted": {"type": "boolean"}}
+          }
+        }
+      }
+    },
+    "suppliers": {"type": "array"},
+    "route": {"type": "object"},
+    "quotes": {
+      "type": "object",
+      "required": ["quote_samples"],
+      "properties": {
+        "quote_samples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["quote_id", "status", "expires_at", "price_components"],
+            "properties": {
+              "status": {"enum": ["draft", "valid", "expired", "confirmed_locked"]},
+              "price_components": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["component", "amount", "currency", "supplier_id"],
+                  "properties": {"amount": {"type": "number", "minimum": 0}}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "plan": {
+      "type": "object",
+      "required": ["plan_id", "versions", "diffs"],
+      "properties": {
+        "versions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["version", "status", "availability", "total_amount", "total_currency"],
+            "properties": {"status": {"enum": ["draft", "superseded", "confirmed"]}}
+          }
+        }
+      }
+    },
+    "contract": {
+      "type": "object",
+      "required": ["contract_id", "deposit", "terms"]
+    },
+    "settlement": {"type": "object"},
+    "callbacks": {
+      "type": "object",
+      "required": ["dedup_rule", "callbacks"],
+      "properties": {
+        "callbacks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["event_id", "callback_id", "resource", "supplier_ref", "source_timestamp", "effect"],
+            "properties": {"effect": {"enum": ["create_order_once", "duplicate_suppressed"]}}
+          }
+        }
+      }
+    },
+    "arabic": {
+      "type": "object",
+      "required": ["workflow_rule", "items"],
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["content_id", "status", "review_rounds"],
+            "properties": {"status": {"enum": ["draft", "in_review", "approved", "rejected"]}}
+          }
+        }
+      }
+    },
+    "prayer": {"type": "object"},
+    "commitments": {
+      "type": "object",
+      "required": ["ledger_rule", "commitments"],
+      "properties": {
+        "commitments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["commitment_id", "promise", "confirmed_by", "confirmed_at", "outcome"],
+            "properties": {"outcome": {"enum": ["pending", "fulfilled", "partial", "fulfilled_with_replacement", "failed", "standby_not_needed"]}}
+          }
+        }
+      }
+    },
+    "events": {
+      "type": "object",
+      "required": ["integrity_rule", "events"],
+      "properties": {
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["event_id", "at", "by", "type"],
+            "properties": {"type": {"enum": ["service_log", "incident", "complaint", "complaint_resolution", "supplier_notice", "replacement_confirmed"]}}
+          }
+        }
+      }
+    },
+    "itinerary": {
+      "type": "object",
+      "required": ["plan_id", "version", "items", "arabic_review_status", "revision_history"]
+    },
+    "capabilities": {
+      "type": "object",
+      "required": ["privacy_rule", "capabilities"]
+    }
+  }
+}

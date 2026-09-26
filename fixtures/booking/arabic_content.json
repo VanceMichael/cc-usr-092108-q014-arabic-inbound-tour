@@ -1,0 +1,56 @@
+{
+  "workflow_rule": "任何面向客人的阿拉伯语内容必须经阿语审校人（母语或C2）审校后方可发出；机器直出仅作草稿，状态不得跳转为 approved。",
+  "items": [
+    {
+      "content_id": "AR-ITIN-01",
+      "title": "阿语家庭行程单 v3",
+      "source_language": "zh",
+      "translation_mode": "mt_draft_then_human_review",
+      "draft_by": "SYS-MT",
+      "review_rounds": [
+        {
+          "round": 1,
+          "reviewer_id": "REV-AR-03",
+          "reviewer_level": "C2_native",
+          "at": "2026-05-07T19:20:00+04:00",
+          "verdict": "changes_requested",
+          "issues": [
+            {"severity": "major", "where": "祈祷安排", "problem": "主麻聚礼时间误译为宵礼，可能误导礼拜", "fix": "改为 صلاة الجمعة 并标注12:00-13:45"},
+            {"severity": "minor", "where": "火锅说明", "problem": "حلال 修饰词位置歧义，可能被读作仅锅具清真", "fix": "明确整餐与食材均为清真认证"}
+          ]
+        },
+        {
+          "round": 2,
+          "reviewer_id": "REV-AR-03",
+          "at": "2026-05-08T09:10:00+04:00",
+          "verdict": "approved",
+          "issues": []
+        }
+      ],
+      "status": "approved",
+      "approved_version_hash": "sha256:7c10…aa"
+    },
+    {
+      "content_id": "AR-EMRG-01",
+      "title": "应急联系卡（阿语）",
+      "translation_mode": "human_translation",
+      "draft_by": "REV-AR-03",
+      "review_rounds": [
+        {"round": 1, "reviewer_id": "REV-AR-07", "reviewer_level": "C2_native", "at": "2026-05-08T11:00:00+04:00", "verdict": "approved", "issues": []}
+      ],
+      "status": "approved"
+    },
+    {
+      "content_id": "AR-MEALMSG-01",
+      "title": "备用餐厅替换通知（阿语要点）",
+      "translation_mode": "mt_draft_then_human_review",
+      "draft_by": "SYS-MT",
+      "review_rounds": [
+        {"round": 1, "reviewer_id": "REV-AR-03", "at": "2026-10-16T20:40:00+08:00", "verdict": "approved", "issues": [
+          {"severity": "minor", "where": "落款", "problem": "备用餐厅名称音译不统一", "fix": "采用经名英译再阿化的统一写法"}
+        ]}
+      ],
+      "status": "approved"
+    }
+  ]
+}

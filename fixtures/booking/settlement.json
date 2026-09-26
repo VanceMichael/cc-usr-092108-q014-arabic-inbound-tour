@@ -1,0 +1,60 @@
+{
+  "entries": [
+    {
+      "entry_id": "STL-01",
+      "contract_id": "CT-2610-CKG-08P",
+      "type": "deposit",
+      "amount": 32340,
+      "currency": "CNY",
+      "at": "2026-05-09T18:05:00+04:00",
+      "receipt_id": "RCP-051-0009",
+      "allocation": {"SUP-AIR": 12000, "SUP-HTL": 9000, "SUP-GUIDE": 2000, "SUP-VISA": 1280, "retained": 8060}
+    },
+    {
+      "entry_id": "STL-02",
+      "type": "supplier_charge_nonrefundable",
+      "context": "G2 部分参加：放弃大足石刻，留店休息（已提前72小时告知）",
+      "date": "2026-10-16",
+      "guest": "G2",
+      "refund": {"activity_ticket": 0, "meal_packed": 0, "note": "SUP-ACT 长者票未出；午餐餐盒正常供应，无退费"},
+      "supplier_penalty": 0,
+      "guest_charge": 0,
+      "rule_applied": "partial_attendance"
+    },
+    {
+      "entry_id": "STL-03",
+      "type": "supplier_replacement",
+      "context": "原清真餐厅 SUP-MEAL 10月17日灶台检修无法供餐",
+      "date": "2026-10-16",
+      "original_supplier_id": "SUP-MEAL",
+      "replacement_supplier_id": "SUP-MEAL-B",
+      "replacement_checks": ["halal_cert_valid", "nut_free_kitchen", "soft_food_capable", "guest_confirmed"],
+      "price_delta": {"amount": 180, "currency": "CNY", "borne_by": "agency"},
+      "rule_applied": "supplier_replacement"
+    },
+    {
+      "entry_id": "STL-04",
+      "type": "cancellation_quote",
+      "context": "样例：若 G5 在出发前10日因病取消（演示结算口径）",
+      "window": "出发前8-14日",
+      "guest_charge_rule": "总费用60%或已发生成本孰高",
+      "air_ticket": {"rule": "按客票退改签，特价票仅退税费", "estimated": 1800},
+      "hotel": {"rule": "不占床的第三人费用可减免，已锁房型按合同", "estimated": 0},
+      "remaining_seven": {"rule": "不因一人取消而解散私家团", "estimated": 0}
+    },
+    {
+      "entry_id": "STL-05",
+      "type": "complaint_compensation",
+      "context": "10月15日川剧场阿语解说设备故障20分钟（见事件 EVT-1015-03）",
+      "at": "2026-10-15T17:55:00+08:00",
+      "resolution": "SUP-GUIDE 赠送次日阿语茶文化专场讲解并退还该场解说费20%（400元）",
+      "amount": -400,
+      "currency": "CNY",
+      "evidence": ["EVT-1015-03", "CMM-GD-07"],
+      "rule_applied": "complaint_window"
+    }
+  ],
+  "replacement_supplier_dir": [
+    {"supplier_id": "SUP-MEAL-B", "category": "清真餐饮（备用）", "name": "回味清真小厨（样例虚构）", "capabilities": ["清真认证厨房", "无麸质餐", "坚果隔离餐", "软食幼儿餐"], "halal_cert_expiry": "2027-03-31"}
+  ]
+}

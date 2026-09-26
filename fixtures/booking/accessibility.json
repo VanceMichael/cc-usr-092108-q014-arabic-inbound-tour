@@ -1,0 +1,27 @@
+{
+  "needs": [
+    {
+      "guest_id": "G1",
+      "condition": "双膝退行性病变，连续步行不超过500米",
+      "mitigations": ["wheelchair_loan", "accessible_vehicle", "elevator_only_hotel", "short_walk_segments"],
+      "severity": "high"
+    },
+    {
+      "guest_id": "G2",
+      "condition": "右耳听力辅助（助听器）",
+      "mitigations": ["written_briefing_ar", "guide_facing_side_right"],
+      "severity": "low"
+    },
+    {
+      "guest_id": "G8",
+      "condition": "3岁幼儿",
+      "mitigations": ["stroller_space", "child_safety_seat", "crib", "early_rest_flexible"],
+      "severity": "mid"
+    }
+  ],
+  "global_requirements": {
+    "vehicle": "9座低地板商务车，带轮椅固定位与婴儿座椅接口",
+    "hotel": "至少2间无障碍房（带扶手卫浴，其中1间轮椅可进入淋浴区），全程电梯",
+    "attractions": "优先电瓶车/索道/室内场馆，石板路路段提供轮椅协助"
+  }
+}

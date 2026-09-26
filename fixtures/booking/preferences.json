@@ -1,0 +1,27 @@
+{
+  "household": {
+    "languages": ["ar-AE", "en"],
+    "guide_language_required": "ar",
+    "halal_required": true,
+    "alcohol_free_rooms": true,
+    "prayer_facility_required": true,
+    "qibla_direction_info_required": true,
+    "photo_policy": "未经同意不拍摄家中女性成员",
+    "rooming": [
+      {"room": "R1", "guest_ids": ["G3", "G4"], "bed": "king", "crib": false},
+      {"room": "R2", "guest_ids": ["G5", "G6"], "bed": "twin", "crib": false},
+      {"room": "R3", "guest_ids": ["G1", "G2"], "bed": "twin", "crib": false},
+      {"room": "R4", "guest_ids": ["G7", "G8"], "bed": "double", "crib": true}
+    ]
+  },
+  "guest_preferences": [
+    {"guest_id": "G1", "dietary_tags": ["halal"], "allergies": [], "activity_prefs": ["茶文化", "历史古迹"], "notes": "偏好慢节奏，避免长距离步行"},
+    {"guest_id": "G2", "dietary_tags": ["halal", "gluten_free"], "allergies": [], "activity_prefs": ["手工艺", "江景"], "notes": "右耳佩戴助听器，需口头讲解配合书面要点"},
+    {"guest_id": "G3", "dietary_tags": ["halal"], "allergies": [], "activity_prefs": ["城市夜景", "历史古迹"]},
+    {"guest_id": "G4", "dietary_tags": ["halal"], "allergies": [], "activity_prefs": ["市集购物", "摄影"]},
+    {"guest_id": "G5", "dietary_tags": ["halal"], "allergies": [], "activity_prefs": ["足球", "川剧变脸体验"]},
+    {"guest_id": "G6", "dietary_tags": ["halal"], "allergies": [], "activity_prefs": ["恐龙与自然博物馆", "索道"]},
+    {"guest_id": "G7", "dietary_tags": ["halal"], "allergies": [], "activity_prefs": ["手工绘画", "小动物互动"]},
+    {"guest_id": "G8", "dietary_tags": ["halal", "soft_food"], "allergies": ["tree_nut"], "activity_prefs": ["室内游戏角"], "notes": "乘车需儿童安全座椅"}
+  ]
+}

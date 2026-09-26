@@ -1,0 +1,43 @@
+{
+  "document": "客人持有的唯一一致行程（家庭副本）",
+  "plan_id": "PLAN-CKG-2610",
+  "version": 3,
+  "issued_at": "2026-05-09T12:00:00+08:00",
+  "consistency_rule": "客人副本、旅行社存根、供应商订单三方的项目编号、时间与承诺编号一致；任何改版整单重发（阿语/中文双语），旧版标注作废并保留历史版本，不就地涂改。",
+  "languages": ["zh", "ar"],
+  "arabic_content_id": "AR-ITIN-01",
+  "arabic_review_status": "approved",
+  "party_size": 8,
+  "currency_locked": "CNY 107800（定金后锁定）",
+  "days_summary_ref": "route.json#/days（项目编号一一对应）",
+  "items": [
+    {"item_id": "D1-FLT", "date": "2026-10-14", "time": "08:50-09:40", "title_zh": "抵达重庆", "commitment_id": "CMT-007"},
+    {"item_id": "D1-VEH", "date": "2026-10-14", "time": "10:00-10:50", "title_zh": "无障碍专车接机", "commitment_id": "CMT-005"},
+    {"item_id": "D1-HTL", "date": "2026-10-14", "time": "11:00-12:00", "title_zh": "入住（无障碍房2间/婴儿床/无酒精房）", "commitment_id": "CMT-002"},
+    {"item_id": "D1-LUN", "date": "2026-10-14", "time": "12:15-13:30", "title_zh": "清真午宴（18:25礼拜角）", "commitment_id": "CMT-004"},
+    {"item_id": "D1-LOU", "date": "2026-10-14", "time": "13:45-16:00", "title_zh": "酒店休整与幼儿游戏角"},
+    {"item_id": "D1-CRUISE", "date": "2026-10-14", "time": "18:30-20:30", "title_zh": "两江夜游（轮椅位电梯登船）"},
+    {"item_id": "D2-MUS", "date": "2026-10-15", "time": "09:30-11:30", "title_zh": "自然博物馆（少儿组）"},
+    {"item_id": "D2-LUN", "date": "2026-10-15", "time": "12:00-13:15", "title_zh": "清真午餐（12:25静室礼拜）", "commitment_id": "CMT-004"},
+    {"item_id": "D2-OLD", "date": "2026-10-15", "time": "14:00-16:00", "title_zh": "十八梯慢游（电瓶车/电梯）"},
+    {"item_id": "D2-OPERA", "date": "2026-10-15", "time": "16:30-18:00", "title_zh": "川剧变脸阿语解说场", "commitment_id": "CMT-003"},
+    {"item_id": "D2-DIN", "date": "2026-10-15", "time": "18:15-19:30", "title_zh": "清真晚餐", "commitment_id": "CMT-004"},
+    {"item_id": "D3-DAZU", "date": "2026-10-16", "time": "08:00-11:30", "title_zh": "大足石刻（提前返程衔接主麻）"},
+    {"item_id": "D3-JUMUAH", "date": "2026-10-16", "time": "12:00-13:45", "title_zh": "主麻聚礼（重庆清真寺）+清真午膳", "commitment_id": "CMT-006"},
+    {"item_id": "D3-DIN", "date": "2026-10-16", "time": "17:30-18:45", "title_zh": "清真晚餐", "commitment_id": "CMT-004"},
+    {"item_id": "D4-CABLE", "date": "2026-10-17", "time": "09:30-11:00", "title_zh": "长江索道（工作人员协助分流）"},
+    {"item_id": "D4-LUN", "date": "2026-10-17", "time": "11:30-13:00", "title_zh": "清真火锅午宴（备用餐厅，已书面确认）", "commitment_id": "CMT-004"},
+    {"item_id": "D4-CRAFT", "date": "2026-10-17", "time": "14:00-16:00", "title_zh": "分龄手工活动"},
+    {"item_id": "D4-TEA", "date": "2026-10-17", "time": "14:15-15:45", "title_zh": "山城茶文化（长者座席）"},
+    {"item_id": "D5-SOUQ", "date": "2026-10-18", "time": "09:00-11:00", "title_zh": "磁器口采购（电瓶车）"},
+    {"item_id": "D5-LUN", "date": "2026-10-18", "time": "11:30-12:30", "title_zh": "清真午餐", "commitment_id": "CMT-004"},
+    {"item_id": "D5-VEH", "date": "2026-10-18", "time": "13:30-14:20", "title_zh": "无障碍专车送机", "commitment_id": "CMT-005"},
+    {"item_id": "D5-FLT", "date": "2026-10-18", "time": "16:10-20:05", "title_zh": "回程航班 CKG-DXB（已确认）", "commitment_id": "CMT-001"}
+  ],
+  "emergency": {"hotline_content_id": "AR-EMRG-01", "note": "24小时阿语热线卡片随行程单发放"},
+  "revision_history": [
+    {"version": 1, "at": "2026-04-29T11:30:00+04:00", "voided": true, "reason": "回程航班与无障碍房未确认，口头报价失效"},
+    {"version": 2, "at": "2026-05-02T10:05:00+04:00", "voided": true, "reason": "无障碍房仅1间，需调整酒店方案"},
+    {"version": 3, "at": "2026-05-09T12:00:00+08:00", "voided": false, "reason": "全部承诺确认，阿语版本审校通过"}
+  ]
+}

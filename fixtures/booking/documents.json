@@ -1,0 +1,107 @@
+{
+  "policy_ref": "中阿普通护照互免签证安排（入境停留不超过30日）",
+  "verified_by_supplier": "SUP-VISA",
+  "records": [
+    {
+      "guest_id": "G1",
+      "doc_type": "ordinary_passport",
+      "doc_ref_masked": "P-AE-****2314",
+      "nationality": "AE",
+      "expiry": "2030-06-01",
+      "history": [
+        {"check": "six_months_validity", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051", "detail": "入境后有效期超过6个月"},
+        {"check": "blank_pages", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051"},
+        {"check": "visa_exemption_eligibility", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051"}
+      ],
+      "status": "verified"
+    },
+    {
+      "guest_id": "G2",
+      "doc_type": "ordinary_passport",
+      "doc_ref_masked": "P-AE-****2315",
+      "nationality": "AE",
+      "expiry": "2029-11-20",
+      "history": [
+        {"check": "six_months_validity", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051"},
+        {"check": "visa_exemption_eligibility", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051"}
+      ],
+      "status": "verified"
+    },
+    {
+      "guest_id": "G3",
+      "doc_type": "ordinary_passport",
+      "doc_ref_masked": "P-AE-****0977",
+      "nationality": "AE",
+      "expiry": "2031-03-14",
+      "history": [
+        {"check": "six_months_validity", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051"},
+        {"check": "visa_exemption_eligibility", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051"}
+      ],
+      "status": "verified"
+    },
+    {
+      "guest_id": "G4",
+      "doc_type": "ordinary_passport",
+      "doc_ref_masked": "P-AE-****0981",
+      "nationality": "AE",
+      "expiry": "2030-08-02",
+      "history": [
+        {"check": "six_months_validity", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051"},
+        {"check": "visa_exemption_eligibility", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051"}
+      ],
+      "status": "verified"
+    },
+    {
+      "guest_id": "G5",
+      "doc_type": "ordinary_passport",
+      "doc_ref_masked": "P-AE-****4410",
+      "nationality": "AE",
+      "expiry": "2029-05-30",
+      "history": [
+        {"check": "six_months_validity", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051"},
+        {"check": "minor_travel_consent", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051", "detail": "随父母同行，授权书已存档"}
+      ],
+      "status": "verified"
+    },
+    {
+      "guest_id": "G6",
+      "doc_type": "ordinary_passport",
+      "doc_ref_masked": "P-AE-****4411",
+      "nationality": "AE",
+      "expiry": "2028-09-12",
+      "history": [
+        {"check": "six_months_validity", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051"},
+        {"check": "minor_travel_consent", "result": "pass", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051"}
+      ],
+      "status": "verified"
+    },
+    {
+      "guest_id": "G7",
+      "doc_type": "ordinary_passport",
+      "doc_ref_masked": "P-AE-****1042",
+      "nationality": "AE",
+      "expiry": "2027-01-09",
+      "history": [
+        {"check": "six_months_validity", "result": "fail", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051", "detail": "护照距入境日不足6个月，阻断出票"},
+        {"check": "replacement_document", "result": "pass", "at": "2026-04-30T14:20:00+04:00", "by": "EMP-051", "detail": "已换新照 P-AE-****8820，有效期至2031-04-30"},
+        {"check": "visa_exemption_eligibility", "result": "pass", "at": "2026-04-30T14:20:00+04:00", "by": "EMP-051"}
+      ],
+      "replacement_doc_ref_masked": "P-AE-****8820",
+      "replacement_expiry": "2031-04-30",
+      "status": "exception_resolved"
+    },
+    {
+      "guest_id": "G8",
+      "doc_type": "child_passport_with_birth_cert",
+      "doc_ref_masked": "P-AE-****7733",
+      "nationality": "AE",
+      "expiry": "2029-02-18",
+      "history": [
+        {"check": "birth_certificate", "result": "pending", "at": "2026-04-29T16:40:00+04:00", "by": "EMP-051", "detail": "出生证明翻译件待补，暂不放票"},
+        {"check": "birth_certificate", "result": "pass", "at": "2026-04-30T15:05:00+04:00", "by": "EMP-051", "detail": "翻译件已补齐并核验"},
+        {"check": "six_months_validity", "result": "pass", "at": "2026-04-30T15:05:00+04:00", "by": "EMP-051"}
+      ],
+      "status": "verified"
+    }
+  ]
+}

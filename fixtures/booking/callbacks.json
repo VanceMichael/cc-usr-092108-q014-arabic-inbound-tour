@@ -1,0 +1,55 @@
+{
+  "dedup_rule": "同一 (resource, supplier_ref, callback_id) 在全部时区只允许处理一次；处理结果按 event_id 缓存；时钟统一以事件原始时间戳归组，不以接收顺序为准。",
+  "callbacks": [
+    {
+      "event_id": "CB-7701",
+      "callback_id": "AIR-CKGDXB-1610-CONF",
+      "received_at": "2026-05-08T12:02:00+08:00",
+      "source_timestamp": "2026-05-08T08:02:00+04:00",
+      "resource": "return_flight_CKG_DXB_2026-10-18",
+      "supplier_ref": "SUP-AIR",
+      "payload_digest": "sha256:3a9f…c1",
+      "effect": "create_order_once",
+      "processed": true,
+      "result_order_id": "ORD-AIR-2610-18"
+    },
+    {
+      "event_id": "CB-7702",
+      "callback_id": "AIR-CKGDXB-1610-CONF",
+      "received_at": "2026-05-08T12:07:00+08:00",
+      "source_timestamp": "2026-05-08T08:07:00+04:00",
+      "resource": "return_flight_CKG_DXB_2026-10-18",
+      "supplier_ref": "SUP-AIR",
+      "payload_digest": "sha256:3a9f…c1",
+      "effect": "duplicate_suppressed",
+      "processed": false,
+      "deduped_against": "CB-7701",
+      "note": "航司网关重试，同一 callback_id 第二次推送，不重复出票"
+    },
+    {
+      "event_id": "CB-7703",
+      "callback_id": "AIR-CKGDXB-1610-CONF",
+      "received_at": "2026-05-08T16:31:00+04:00",
+      "source_timestamp": "2026-05-08T08:31:00+04:00",
+      "resource": "return_flight_CKG_DXB_2026-10-18",
+      "supplier_ref": "SUP-AIR",
+      "payload_digest": "sha256:3a9f…c1",
+      "effect": "duplicate_suppressed",
+      "processed": false,
+      "deduped_against": "CB-7701",
+      "note": "迪拜侧夜班同事刷新页面触发的第三次回调，跨时区仍命中同一幂等键"
+    },
+    {
+      "event_id": "CB-7710",
+      "callback_id": "HTL-ACCROOM-2CONFIRM",
+      "received_at": "2026-05-08T15:10:00+08:00",
+      "source_timestamp": "2026-05-08T15:10:00+08:00",
+      "resource": "hotel_accessible_rooms_2026-10-14",
+      "supplier_ref": "SUP-HTL",
+      "payload_digest": "sha256:81bd…7e",
+      "effect": "create_order_once",
+      "processed": true,
+      "result_order_id": "ORD-HTL-2610-14"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "route_id": "RT-CKG-FAMILY-05",
+  "destination": "重庆",
+  "arrival_city": "重庆江北国际机场",
+  "date_range": {"start": "2026-10-14", "end": "2026-10-18"},
+  "prayer_location": {"lat": 29.563, "lon": 106.5516, "timezone": "Asia/Shanghai"},
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-10-14",
+      "items": [
+        {"item_id": "D1-FLT", "kind": "international_arrival", "title": "EK/DXB-CKG 抵达重庆", "time": {"start": "08:50", "end": "09:40"}, "supplier_id": "SUP-AIR", "participants": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8"], "accessibility": ["wheelchair_service", "bassinet"]},
+        {"item_id": "D1-VEH", "kind": "transfer", "title": "机场至酒店无障碍专车", "time": {"start": "10:00", "end": "10:50"}, "supplier_id": "SUP-VEH", "accessibility": ["accessible_vehicle", "child_seat"]},
+        {"item_id": "D1-HTL", "kind": "hotel", "title": "江畔酒店办理入住（无障碍房2间）", "time": {"start": "11:00", "end": "12:00"}, "supplier_id": "SUP-HTL"},
+        {"item_id": "D1-LUN", "kind": "meal", "title": "清真午宴（含无麸质/坚果隔离/幼儿软食）", "time": {"start": "12:15", "end": "13:30"}, "supplier_id": "SUP-MEAL", "meal_codes": ["HALAL", "GF", "NUT-FREE", "SOFT"]},
+        {"item_id": "D1-LOU", "kind": "activity", "title": "酒店休整+室内儿童游戏角", "time": {"start": "13:45", "end": "16:00"}, "supplier_id": "SUP-ACT", "age_bands": ["0-3", "4-7"]},
+        {"item_id": "D1-CRUISE", "kind": "activity", "title": "两江夜游（电梯登船+轮椅位）", "time": {"start": "18:30", "end": "20:30"}, "supplier_id": "SUP-ACT", "accessibility": ["elevator_boarding", "wheelchair_space"]}
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-10-15",
+      "items": [
+        {"item_id": "D2-MUS", "kind": "activity", "title": "重庆自然博物馆（恐龙厅，少儿组）", "time": {"start": "09:30", "end": "11:30"}, "supplier_id": "SUP-ACT", "age_bands": ["8-12", "13-17"], "accessibility": ["elevator", "wheelchair_loan"]},
+        {"item_id": "D2-LUN", "kind": "meal", "title": "清真午餐（穆斯林餐厅，独立操作间）", "time": {"start": "12:00", "end": "13:15"}, "supplier_id": "SUP-MEAL", "meal_codes": ["HALAL", "GF", "NUT-FREE", "SOFT"]},
+        {"item_id": "D2-OLD", "kind": "activity", "title": "十八梯慢游（电瓶车+无障碍电梯，长者组）", "time": {"start": "14:00", "end": "16:00"}, "supplier_id": "SUP-ACT", "accessibility": ["ev_cart", "elevator"]},
+        {"item_id": "D2-OPERA", "kind": "activity", "title": "川剧变脸体验（青少年阿语解说场）", "time": {"start": "16:30", "end": "18:00"}, "supplier_id": "SUP-ACT", "age_bands": ["13-17"]},
+        {"item_id": "D2-DIN", "kind": "meal", "title": "清真晚餐+打包宵礼茶点", "time": {"start": "18:15", "end": "19:30"}, "supplier_id": "SUP-MEAL", "meal_codes": ["HALAL", "GF", "NUT-FREE"]}
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-10-16",
+      "items": [
+        {"item_id": "D3-DAZU", "kind": "activity", "title": "大足石刻一日（轮椅坡道+电瓶车）", "time": {"start": "08:00", "end": "15:30"}, "supplier_id": "SUP-ACT", "accessibility": ["ev_cart", "wheelchair_path"], "note": "含周五主麻日，途中安排重庆清真寺或静室"},
+        {"item_id": "D3-JUMUAH", "kind": "prayer_arrangement", "title": "主麻聚礼安排（重庆清真寺，清真午膳同行）", "time": {"start": "12:00", "end": "13:45"}, "supplier_id": "SUP-GUIDE", "participants_optional": true},
+        {"item_id": "D3-DIN", "kind": "meal", "title": "返程后清真晚餐", "time": {"start": "17:30", "end": "18:45"}, "supplier_id": "SUP-MEAL", "meal_codes": ["HALAL", "GF", "NUT-FREE", "SOFT"]}
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-10-17",
+      "items": [
+        {"item_id": "D4-CABLE", "kind": "activity", "title": "长江索道（工作人员协助轮椅家庭分流）", "time": {"start": "09:30", "end": "11:00"}, "supplier_id": "SUP-ACT", "accessibility": ["staff_assist"]},
+        {"item_id": "D4-LUN", "kind": "meal", "title": "清真火锅午宴（独立清真锅具）", "time": {"start": "11:30", "end": "13:00"}, "supplier_id": "SUP-MEAL", "meal_codes": ["HALAL", "GF", "NUT-FREE", "SOFT"]},
+        {"item_id": "D4-CRAFT", "kind": "activity", "title": "分龄手工：幼儿手指画/少儿漆器体验/青少年摄影", "time": {"start": "14:00", "end": "16:00"}, "supplier_id": "SUP-ACT", "age_bands": ["0-3", "4-7", "8-12", "13-17"]},
+        {"item_id": "D4-TEA", "kind": "activity", "title": "山城茶文化体验（长者慢节奏座席）", "time": {"start": "14:15", "end": "15:45"}, "supplier_id": "SUP-ACT", "age_bands": ["65+"]}
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2026-10-18",
+      "items": [
+        {"item_id": "D5-SOUQ", "kind": "activity", "title": "磁器口古镇采购（电瓶车+轮椅协助）", "time": {"start": "09:00", "end": "11:00"}, "supplier_id": "SUP-ACT", "accessibility": ["ev_cart", "wheelchair_assist"]},
+        {"item_id": "D5-LUN", "kind": "meal", "title": "清真午餐", "time": {"start": "11:30", "end": "12:30"}, "supplier_id": "SUP-MEAL", "meal_codes": ["HALAL", "GF", "NUT-FREE", "SOFT"]},
+        {"item_id": "D5-VEH", "kind": "transfer", "title": "酒店至机场无障碍专车", "time": {"start": "13:30", "end": "14:20"}, "supplier_id": "SUP-VEH", "accessibility": ["accessible_vehicle", "child_seat"]},
+        {"item_id": "D5-FLT", "kind": "international_departure", "title": "CKG-DXB 回程航班（待确认）", "time": {"start": "16:10", "end": "20:05"}, "supplier_id": "SUP-AIR", "participants": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8"], "status_hint": "return_flight_unconfirmed"}
+      ]
+    }
+  ]
+}

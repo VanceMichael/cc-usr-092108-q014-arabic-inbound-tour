@@ -1,0 +1,71 @@
+{
+  "plan_id": "PLAN-CKG-2610",
+  "family_id": "FAM-2610-DXB",
+  "route_id": "RT-CKG-FAMILY-05",
+  "versions": [
+    {
+      "version": 1,
+      "based_on_quote": "Q-260429-01",
+      "created_at": "2026-04-29T11:30:00+04:00",
+      "created_by": "EMP-051",
+      "status": "superseded",
+      "availability": {
+        "return_flight": "pending",
+        "accessible_rooms": 2,
+        "arabic_guide": "tentative",
+        "halal_dining": true
+      },
+      "total_currency": "AED",
+      "total_amount": 52600,
+      "change_note": "展台口头方案：5日4晚私家团；回程航班与无障碍房均未确认"
+    },
+    {
+      "version": 2,
+      "based_on_quote": "Q-260502-02",
+      "created_at": "2026-05-02T10:05:00+04:00",
+      "created_by": "EMP-051",
+      "status": "superseded",
+      "availability": {
+        "return_flight": "candidate_locked_24h",
+        "accessible_rooms": 1,
+        "arabic_guide": "tentative",
+        "halal_dining": true
+      },
+      "total_currency": "CNY",
+      "total_amount": 104700,
+      "change_note": "改用人民币报价；酒店仅有1间无障碍房，需平替第二家酒店；主麻安排首次写入行程"
+    },
+    {
+      "version": 3,
+      "based_on_quote": "Q-260508-03",
+      "created_at": "2026-05-08T09:35:00+04:00",
+      "created_by": "EMP-051",
+      "reviewed_by": "REV-012",
+      "status": "confirmed",
+      "availability": {
+        "return_flight": "confirmed",
+        "accessible_rooms": 2,
+        "arabic_guide": "confirmed",
+        "halal_dining": true
+      },
+      "total_currency": "CNY",
+      "total_amount": 107800,
+      "change_note": "回程16:10航班确认；2间无障碍房同酒店锁定；阿语向导定级C2并完成阿语行程单审校；机票与酒店价格上调"
+    }
+  ],
+  "diffs": [
+    {"from": 1, "to": 2, "changes": [
+      {"type": "price", "field": "total", "before": "52600 AED", "after": "104700 CNY", "reason": "币种切换并重算，不可直接比较；以当日牌价折合约+1.4%"},
+      {"type": "availability", "field": "return_flight", "before": "pending", "after": "candidate_locked_24h"},
+      {"type": "availability", "field": "accessible_rooms", "before": 2, "after": 1, "reason": "五一后库存释放，仅1间可订"},
+      {"type": "schedule", "field": "D3", "before": "大足石刻下午返程", "after": "插入主麻聚礼12:00-13:45，大足段提前至08:00出发"}
+    ]},
+    {"from": 2, "to": 3, "changes": [
+      {"type": "price", "field": "components.international_air", "before": 57100, "after": 58640, "reason": "回程确认后票价上调1540元"},
+      {"type": "price", "field": "components.hotel", "before": 26400, "after": 27960, "reason": "同店2间无障碍房替代跨店方案，+1560元"},
+      {"type": "availability", "field": "return_flight", "before": "candidate_locked_24h", "after": "confirmed"},
+      {"type": "availability", "field": "accessible_rooms", "before": 1, "after": 2},
+      {"type": "availability", "field": "arabic_guide", "before": "tentative", "after": "confirmed"}
+    ]}
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "grants": [
+    {
+      "grant_id": "C-VISA-01",
+      "purpose": "document_verification",
+      "recipient_supplier_id": "SUP-VISA",
+      "guest_scope": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8"],
+      "fields": ["display_name", "sex", "dob", "passport_ref", "birth_cert_ref", "minor_guardian_relation"],
+      "granted": true,
+      "granted_by": "G3",
+      "granted_by_role": "户主兼全体未成年子女法定监护人",
+      "granted_at": "2026-04-29T12:05:00+04:00",
+      "expires_at": "2026-11-30",
+      "basis": "入境免签安排下的证件核验"
+    },
+    {
+      "grant_id": "C-AIR-01",
+      "purpose": "air_ticketing",
+      "recipient_supplier_id": "SUP-AIR",
+      "guest_scope": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8"],
+      "fields": ["display_name", "sex", "dob", "passport_ref", "seat_request", "bassinet_request"],
+      "granted": true,
+      "granted_by": "G3",
+      "granted_by_role": "户主兼法定监护人",
+      "granted_at": "2026-04-29T12:05:00+04:00",
+      "expires_at": "2026-10-31",
+      "basis": "出票与婴儿摇篮申请"
+    },
+    {
+      "grant_id": "C-HTL-01",
+      "purpose": "hotel_booking",
+      "recipient_supplier_id": "SUP-HTL",
+      "guest_scope": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8"],
+      "fields": ["display_name", "rooming", "accessible_room_flag", "alcohol_free"],
+      "granted": true,
+      "granted_by": "G3",
+      "granted_by_role": "户主",
+      "granted_at": "2026-04-29T12:05:00+04:00",
+      "expires_at": "2026-10-31",
+      "basis": "房间安排；证件在前台由客人自行出示"
+    },
+    {
+      "grant_id": "C-VEH-01",
+      "purpose": "transport_arrangement",
+      "recipient_supplier_id": "SUP-VEH",
+      "guest_scope": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8"],
+      "fields": ["accessibility_equipment", "child_seat", "headcount"],
+      "granted": true,
+      "granted_by": "G3",
+      "granted_by_role": "户主",
+      "granted_at": "2026-04-29T12:05:00+04:00",
+      "expires_at": "2026-10-31",
+      "basis": "车辆与轮椅固定位、儿童座椅安排，无需姓名"
+    },
+    {
+      "grant_id": "C-GD-01",
+      "purpose": "guide_assignment",
+      "recipient_supplier_id": "SUP-GUIDE",
+      "guest_scope": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8"],
+      "fields": ["language", "dietary_tags", "allergy", "accessibility_needs", "age_band", "photo_policy", "prayer_times_tips"],
+      "granted": true,
+      "granted_by": "G3",
+      "granted_by_role": "户主",
+      "granted_at": "2026-04-29T12:05:00+04:00",
+      "expires_at": "2026-10-31",
+      "basis": "阿拉伯语向导服务与照护需要"
+    },
+    {
+      "grant_id": "C-MEAL-01",
+      "purpose": "catering",
+      "recipient_supplier_id": "SUP-MEAL",
+      "guest_scope": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8"],
+      "fields": ["meal_code", "dietary_tags", "allergy", "headcount"],
+      "granted": true,
+      "granted_by": "G3",
+      "granted_by_role": "户主",
+      "granted_at": "2026-04-29T12:05:00+04:00",
+      "expires_at": "2026-10-31",
+      "basis": "清真餐食与坚果过敏隔离，以餐码对人，不提供姓名"
+    },
+    {
+      "grant_id": "C-ACT-01",
+      "purpose": "activities",
+      "recipient_supplier_id": "SUP-ACT",
+      "guest_scope": ["G1", "G2", "G5", "G6", "G7", "G8"],
+      "fields": ["age_band", "accessibility_tags", "headcount"],
+      "granted": true,
+      "granted_by": "G3",
+      "granted_by_role": "户主",
+      "granted_at": "2026-04-29T12:05:00+04:00",
+      "expires_at": "2026-10-31",
+      "basis": "分龄活动分组"
+    },
+    {
+      "grant_id": "C-ASST-01",
+      "purpose": "emergency_assistance",
+      "recipient_supplier_id": "SUP-ASST",
+      "guest_scope": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8"],
+      "fields": ["display_name", "dob", "medical_notes", "accessibility_needs", "emergency_contact"],
+      "granted": true,
+      "granted_by": "G3",
+      "granted_by_role": "户主兼法定监护人",
+      "granted_at": "2026-04-29T12:06:00+04:00",
+      "expires_at": "2026-10-31",
+      "basis": "境外救援与突发医疗联络，仅紧急时启用"
+    },
+    {
+      "grant_id": "C-MKT-01",
+      "purpose": "marketing",
+      "recipient_supplier_id": "ANY",
+      "guest_scope": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8"],
+      "fields": ["display_name", "contact"],
+      "granted": false,
+      "granted_by": "G3",
+      "granted_at": "2026-04-29T12:06:00+04:00",
+      "expires_at": null,
+      "basis": "客人明确拒绝营销用途共享"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "family_id": "FAM-2610-DXB",
+  "family_name_hint": "阿勒曼苏里（样例虚构家庭）",
+  "lead_guest_id": "G3",
+  "inquiry": {
+    "event": "Arabian Travel Market 2026（迪拜）",
+    "booth": "中国文旅联合展台 B-21",
+    "inquired_at": "2026-04-29T11:20:00+04:00",
+    "channel": "展台现场口头咨询",
+    "request": "一家八口单独成团，不拼团，重庆5日定制",
+    "home_timezone": "Asia/Dubai",
+    "destination_timezone": "Asia/Shanghai"
+  },
+  "members": [
+    {"guest_id": "G1", "relation": "祖父", "display_name": "KARIM_AL_MANSOURI_S", "sex": "M", "birth_year": 1958, "age_band": "65+", "minor": false, "guardian_ids": []},
+    {"guest_id": "G2", "relation": "祖母", "display_name": "SAMIRA_AL_MANSOURI_S", "sex": "F", "birth_year": 1961, "age_band": "65+", "minor": false, "guardian_ids": []},
+    {"guest_id": "G3", "relation": "户主本人", "display_name": "OMAR_AL_MANSOURI_S", "sex": "M", "birth_year": 1984, "age_band": "40-49", "minor": false, "guardian_ids": []},
+    {"guest_id": "G4", "relation": "配偶", "display_name": "LAYLA_AL_MANSOURI_S", "sex": "F", "birth_year": 1987, "age_band": "35-39", "minor": false, "guardian_ids": []},
+    {"guest_id": "G5", "relation": "长子", "display_name": "YUSUF_AL_MANSOURI_S", "sex": "M", "birth_year": 2010, "age_band": "13-17", "minor": true, "guardian_ids": ["G3", "G4"]},
+    {"guest_id": "G6", "relation": "次子", "display_name": "ZAYD_AL_MANSOURI_S", "sex": "M", "birth_year": 2015, "age_band": "8-12", "minor": true, "guardian_ids": ["G3", "G4"]},
+    {"guest_id": "G7", "relation": "女儿", "display_name": "MARYAM_AL_MANSOURI_S", "sex": "F", "birth_year": 2019, "age_band": "4-7", "minor": true, "guardian_ids": ["G3", "G4"]},
+    {"guest_id": "G8", "relation": "幼女", "display_name": "NOUR_AL_MANSOURI_S", "sex": "F", "birth_year": 2023, "age_band": "0-3", "minor": true, "guardian_ids": ["G3", "G4"]}
+  ]
+}
