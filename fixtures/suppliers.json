@@ -1,0 +1,14 @@
+{
+  "suppliers": [
+    {"supplier_id": "sup-visa", "category": "visa", "city": "迪拜",
+     "capabilities": ["签证核验", "加急办理"], "languages": ["ar", "en"], "lead_time_days": 5},
+    {"supplier_id": "sup-hotel", "category": "hotel", "city": "重庆",
+     "capabilities": ["家庭连通房", "无障碍客房", "祈祷室"], "languages": ["zh", "en"], "lead_time_days": 14},
+    {"supplier_id": "sup-guide", "category": "guide", "city": "重庆",
+     "capabilities": ["阿拉伯语向导", "清真餐厅陪同"], "languages": ["ar", "zh"], "lead_time_days": 10},
+    {"supplier_id": "sup-halal", "category": "halal_meals", "city": "重庆",
+     "capabilities": ["清真认证", "无坚果厨房", "外送"], "languages": ["zh"], "lead_time_days": 3},
+    {"supplier_id": "sup-activities", "category": "activities", "city": "重庆",
+     "capabilities": ["分龄活动", "儿童看护", "长者慢游", "无障碍车辆"], "languages": ["zh", "en"], "lead_time_days": 7}
+  ]
+}

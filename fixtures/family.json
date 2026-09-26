@@ -1,0 +1,81 @@
+{
+  "family_id": "fam-2026-014",
+  "source": "2026 迪拜旅游展现场咨询",
+  "destination": "重庆",
+  "party_size": 8,
+  "travel_dates": {"departure": "2026-11-10", "return": "2026-11-15"},
+  "members": [
+    {
+      "member_id": "m1",
+      "relation": {"role": "户主", "age_band": "adult", "room_with": ["m2"], "guardian_of": ["m5", "m6", "m7", "m8"]},
+      "document_check": {"passport_valid": true, "expires_on": "2030-04-18", "visa_status": "verified", "result": "pass", "verified_by": "sup-visa", "verified_at": "2026-09-27T08:00:00+04:00"},
+      "preferences": {"language": "ar", "dietary": "halal", "allergies": [], "meal_notes": "不食猪肉", "interests": ["城市夜景", "火锅文化"]},
+      "accessibility": {"needs": []},
+      "authorizations": {"signatory": true, "emergency_contact": true, "photo_consent": true,
+        "data_sharing": {"visa": true, "hotel": true, "halal_meals": true, "guide": true, "activities": true}}
+    },
+    {
+      "member_id": "m2",
+      "relation": {"role": "配偶", "age_band": "adult", "room_with": ["m1"], "guardian_of": ["m5", "m6", "m7", "m8"]},
+      "document_check": {"passport_valid": true, "expires_on": "2029-08-02", "visa_status": "verified", "result": "pass", "verified_by": "sup-visa", "verified_at": "2026-09-27T08:00:00+04:00"},
+      "preferences": {"language": "ar", "dietary": "halal", "allergies": [], "meal_notes": "", "interests": ["购物", "茶文化"]},
+      "accessibility": {"needs": []},
+      "authorizations": {"signatory": true, "emergency_contact": true, "photo_consent": true,
+        "data_sharing": {"visa": true, "hotel": true, "halal_meals": true, "guide": true, "activities": true}}
+    },
+    {
+      "member_id": "m3",
+      "relation": {"role": "祖父", "age_band": "senior", "room_with": ["m4"], "guardian_of": []},
+      "document_check": {"passport_valid": true, "expires_on": "2028-01-25", "visa_status": "verified", "result": "pass", "verified_by": "sup-visa", "verified_at": "2026-09-27T08:00:00+04:00"},
+      "preferences": {"language": "ar", "dietary": "halal", "allergies": [], "meal_notes": "低盐", "interests": ["历史街区"]},
+      "accessibility": {"needs": ["轮椅通道", "电梯", "无障碍车辆"], "mobility": "wheelchair"},
+      "authorizations": {"signatory": false, "emergency_contact": false, "photo_consent": false,
+        "data_sharing": {"visa": true, "hotel": true, "halal_meals": true, "guide": true, "activities": true}}
+    },
+    {
+      "member_id": "m4",
+      "relation": {"role": "祖母", "age_band": "senior", "room_with": ["m3"], "guardian_of": []},
+      "document_check": {"passport_valid": true, "expires_on": "2028-06-11", "visa_status": "verified", "result": "pass", "verified_by": "sup-visa", "verified_at": "2026-09-27T08:00:00+04:00"},
+      "preferences": {"language": "ar", "dietary": "halal", "allergies": [], "meal_notes": "", "interests": ["手工艺"]},
+      "accessibility": {"needs": ["电梯"]},
+      "authorizations": {"signatory": false, "emergency_contact": false, "photo_consent": false,
+        "data_sharing": {"visa": true, "hotel": true, "halal_meals": true, "guide": true, "activities": true}}
+    },
+    {
+      "member_id": "m5",
+      "relation": {"role": "长子", "age_band": "teen", "room_with": ["m7"], "guardian_of": []},
+      "document_check": {"passport_valid": true, "expires_on": "2029-03-30", "visa_status": "verified", "result": "pass", "verified_by": "sup-visa", "verified_at": "2026-09-27T08:00:00+04:00"},
+      "preferences": {"language": "ar", "dietary": "halal", "allergies": [], "meal_notes": "", "interests": ["轨道交通", "电竞"]},
+      "accessibility": {"needs": []},
+      "authorizations": {"signatory": false, "emergency_contact": false, "photo_consent": true,
+        "data_sharing": {"visa": true, "hotel": true, "halal_meals": true, "guide": true, "activities": false}}
+    },
+    {
+      "member_id": "m6",
+      "relation": {"role": "长女", "age_band": "child", "room_with": ["m8"], "guardian_of": []},
+      "document_check": {"passport_valid": true, "expires_on": "2029-11-19", "visa_status": "verified", "result": "pass", "verified_by": "sup-visa", "verified_at": "2026-09-27T08:00:00+04:00"},
+      "preferences": {"language": "ar", "dietary": "halal", "allergies": ["坚果"], "meal_notes": "严格无坚果", "interests": ["熊猫", "绘画"]},
+      "accessibility": {"needs": []},
+      "authorizations": {"signatory": false, "emergency_contact": false, "photo_consent": false,
+        "data_sharing": {"visa": true, "hotel": true, "halal_meals": true, "guide": true, "activities": true}}
+    },
+    {
+      "member_id": "m7",
+      "relation": {"role": "次子", "age_band": "child", "room_with": ["m5"], "guardian_of": []},
+      "document_check": {"passport_valid": true, "expires_on": "2030-01-08", "visa_status": "verified", "result": "pass", "verified_by": "sup-visa", "verified_at": "2026-09-27T08:00:00+04:00"},
+      "preferences": {"language": "ar", "dietary": "halal", "allergies": [], "meal_notes": "", "interests": ["索道", "游船"]},
+      "accessibility": {"needs": []},
+      "authorizations": {"signatory": false, "emergency_contact": false, "photo_consent": false,
+        "data_sharing": {"visa": true, "hotel": true, "halal_meals": true, "guide": true, "activities": true}}
+    },
+    {
+      "member_id": "m8",
+      "relation": {"role": "次女", "age_band": "toddler", "room_with": ["m6"], "guardian_of": []},
+      "document_check": {"passport_valid": true, "expires_on": "2027-02-15", "visa_status": "pending", "result": "needs_renewal", "verified_by": "sup-visa", "verified_at": "2026-09-27T08:00:00+04:00"},
+      "preferences": {"language": "ar", "dietary": "halal", "allergies": [], "meal_notes": "婴儿餐", "interests": []},
+      "accessibility": {"needs": ["婴儿车"]},
+      "authorizations": {"signatory": false, "emergency_contact": false, "photo_consent": false,
+        "data_sharing": {"visa": true, "hotel": true, "halal_meals": true, "guide": false, "activities": true}}
+    }
+  ]
+}

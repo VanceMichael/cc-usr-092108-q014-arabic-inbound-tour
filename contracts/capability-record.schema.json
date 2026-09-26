@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "服务能力记录（不含个人资料）",
+  "type": "object",
+  "required": ["supplier_category", "city", "party_size_band", "language", "service_tags", "lead_time_days", "fulfilled_on_time", "complaint_count", "period"],
+  "properties": {
+    "supplier_category": {"type": "string", "minLength": 1},
+    "city": {"type": "string", "minLength": 1},
+    "party_size_band": {"enum": ["small", "family", "group"]},
+    "language": {"type": "string", "minLength": 2},
+    "service_tags": {"type": "array", "items": {"type": "string"}},
+    "lead_time_days": {"type": "integer", "minimum": 0},
+    "fulfilled_on_time": {"type": "boolean"},
+    "complaint_count": {"type": "integer", "minimum": 0},
+    "period": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$"}
+  },
+  "additionalProperties": false
+}

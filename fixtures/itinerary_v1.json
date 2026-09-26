@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "created_at": "2026-09-27T14:00:00+08:00",
+  "items": [
+    {"item_id": "d1-hotel", "day": 1, "title": "入住解放碑家庭连通房（全程 5 晚）", "supplier_id": "sup-hotel",
+     "start": "2026-11-10T15:00:00+08:00", "end": "2026-11-10T18:00:00+08:00",
+     "price": {"amount": 9600.0, "currency": "CNY"}, "available": true},
+    {"item_id": "d1-dinner", "day": 1, "title": "清真欢迎晚餐", "supplier_id": "sup-halal",
+     "start": "2026-11-10T19:00:00+08:00", "end": "2026-11-10T20:30:00+08:00",
+     "price": {"amount": 1200.0, "currency": "CNY"}, "available": true},
+    {"item_id": "d2-guide", "day": 2, "title": "阿拉伯语向导·磁器口", "supplier_id": "sup-guide",
+     "start": "2026-11-11T09:00:00+08:00", "end": "2026-11-11T12:00:00+08:00",
+     "price": {"amount": 1500.0, "currency": "CNY"}, "available": true},
+    {"item_id": "d2-activity", "day": 2, "title": "分龄活动·长江索道（长者慢游/儿童陪护）", "supplier_id": "sup-activities",
+     "start": "2026-11-11T14:00:00+08:00", "end": "2026-11-11T16:00:00+08:00",
+     "price": {"amount": 800.0, "currency": "CNY"}, "available": true},
+    {"item_id": "d3-halal", "day": 3, "title": "清真火锅宴", "supplier_id": "sup-halal",
+     "start": "2026-11-12T18:30:00+08:00", "end": "2026-11-12T20:00:00+08:00",
+     "price": {"amount": 1600.0, "currency": "CNY"}, "available": true},
+    {"item_id": "d4-activity", "day": 4, "title": "武隆一日游（无障碍车辆）", "supplier_id": "sup-activities",
+     "start": "2026-11-13T08:30:00+08:00", "end": "2026-11-13T17:00:00+08:00",
+     "price": {"amount": 2800.0, "currency": "CNY"}, "available": true},
+    {"item_id": "d5-guide", "day": 5, "title": "阿拉伯语向导·洪崖洞夜景", "supplier_id": "sup-guide",
+     "start": "2026-11-14T19:00:00+08:00", "end": "2026-11-14T21:00:00+08:00",
+     "price": {"amount": 1200.0, "currency": "CNY"}, "available": true},
+    {"item_id": "d6-activity", "day": 6, "title": "分龄告别活动", "supplier_id": "sup-activities",
+     "start": "2026-11-15T10:00:00+08:00", "end": "2026-11-15T11:30:00+08:00",
+     "price": {"amount": 600.0, "currency": "CNY"}, "available": true}
+  ]
+}

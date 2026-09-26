@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "行程版本",
+  "type": "object",
+  "required": ["version", "created_at", "items"],
+  "properties": {
+    "version": {"type": "integer", "minimum": 1},
+    "created_at": {"type": "string", "format": "date-time"},
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["item_id", "day", "title", "supplier_id", "start", "end", "price", "available"],
+        "properties": {
+          "item_id": {"type": "string", "minLength": 1},
+          "day": {"type": "integer", "minimum": 1},
+          "title": {"type": "string"},
+          "supplier_id": {"type": "string"},
+          "start": {"type": "string", "format": "date-time"},
+          "end": {"type": "string", "format": "date-time"},
+          "price": {
+            "type": "object",
+            "required": ["amount", "currency"],
+            "properties": {
+              "amount": {"type": "number", "minimum": 0},
+              "currency": {"enum": ["CNY", "AED"]}
+            },
+            "additionalProperties": false
+          },
+          "available": {"type": "boolean"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

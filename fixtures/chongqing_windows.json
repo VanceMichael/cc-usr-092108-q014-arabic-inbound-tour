@@ -1,0 +1,20 @@
+{
+  "city": "重庆",
+  "timezone": "Asia/Chongqing",
+  "note": "虚构样例，仅用于冲突检测演示",
+  "dates": {
+    "2026-11-11": {
+      "prayer": [
+        {"name": "Fajr", "start": "05:40", "end": "06:10"},
+        {"name": "Dhuhr", "start": "12:40", "end": "13:10"},
+        {"name": "Asr", "start": "15:50", "end": "16:20"},
+        {"name": "Maghrib", "start": "18:05", "end": "18:35"},
+        {"name": "Isha", "start": "19:25", "end": "19:55"}
+      ],
+      "meal": [
+        {"name": "午餐", "start": "12:30", "end": "13:30"},
+        {"name": "晚餐", "start": "18:30", "end": "19:30"}
+      ]
+    }
+  }
+}

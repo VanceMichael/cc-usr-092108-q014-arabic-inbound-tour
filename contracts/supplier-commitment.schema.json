@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "供应商承诺",
+  "type": "object",
+  "required": ["commitment_id", "promise", "supplier_id"],
+  "properties": {
+    "commitment_id": {"type": "string", "minLength": 1},
+    "promise": {"type": "string", "minLength": 1},
+    "supplier_id": {"type": "string", "minLength": 1},
+    "confirmed_by": {"type": ["string", "null"]},
+    "confirmed_at": {"type": ["string", "null"], "format": "date-time"},
+    "fulfillment": {"enum": [null, "fulfilled", "partial", "failed"]},
+    "fulfillment_note": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

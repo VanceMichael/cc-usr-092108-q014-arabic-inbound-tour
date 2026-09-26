@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "成员资料（分类分存）",
+  "type": "object",
+  "required": ["member_id", "relation", "document_check", "preferences", "accessibility", "authorizations"],
+  "properties": {
+    "member_id": {"type": "string", "minLength": 1},
+    "relation": {
+      "type": "object",
+      "required": ["role", "age_band"],
+      "properties": {
+        "role": {"type": "string"},
+        "age_band": {"enum": ["toddler", "child", "teen", "adult", "senior"]},
+        "room_with": {"type": "array", "items": {"type": "string"}},
+        "guardian_of": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "document_check": {
+      "type": "object",
+      "required": ["passport_valid", "expires_on", "visa_status", "result"],
+      "properties": {
+        "passport_valid": {"type": "boolean"},
+        "expires_on": {"type": "string", "format": "date"},
+        "visa_status": {"enum": ["pending", "verified", "rejected"]},
+        "result": {"enum": ["pass", "needs_renewal", "fail"]}
+      }
+    },
+    "preferences": {"type": "object"},
+    "accessibility": {
+      "type": "object",
+      "required": ["needs"],
+      "properties": {"needs": {"type": "array", "items": {"type": "string"}}}
+    },
+    "authorizations": {
+      "type": "object",
+      "required": ["signatory", "data_sharing"],
+      "properties": {
+        "signatory": {"type": "boolean"},
+        "emergency_contact": {"type": "boolean"},
+        "photo_consent": {"type": "boolean"},
+        "data_sharing": {"type": "object"}
+      }
+    }
+  },
+  "additionalProperties": false
+}
